@@ -106,11 +106,11 @@ function displayItems(){
                   if (err) throw err;
                 }
               );
-                      
-
+                    
             } else {
               console.log("We do not have enough of that item in stock.");
             }
+            //delays the start over function so that it doesnt run before the total
            setTimeout(() => {
             startOver();
            }, 10); 
